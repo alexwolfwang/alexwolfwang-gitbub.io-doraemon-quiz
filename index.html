@@ -46,7 +46,7 @@
                             <h4>{{doraemon.Name}}</h4>
                             <p><strong>Volume:</strong>{{doraemon.Volume}}</p>
                             <p><strong>Public:</strong>{{doraemon.Public}}</p>
-                            <p><strong>Scene:</strong>{{doraemon.Scene}}</p>
+                            <p><strong>Scene:</strong>{{doraemon.Scene | limitTo: 18}}</p>
                             <button class="btn btn-info pull-right"
                             data-toggle="modal" data-target="#doraemon-info"
                             ng-click="list.changeActiveDoraemon(doraemon)">Know more</button>
